@@ -25,6 +25,7 @@ call plug#end()
 
 " Basic Configs
 " -------------
+filetype indent on
 set nu
 
 " Search Configs
