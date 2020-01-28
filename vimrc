@@ -20,18 +20,23 @@ Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
-Plug 'valloric/youcompleteme'
 call plug#end()
+
+" Status Line
+" -----------
+let g:airline_theme='bubblegum'
 
 " Basic Configs
 " -------------
-filetype indent on
+filetype indent plugin on
 set nu
+set wrap
 
 " Search Configs
 " --------------
 set hlsearch
 set incsearch
+set smartcase
 
 " Tabs and Indentation
 " --------------------
@@ -41,22 +46,8 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-" Status Line
-" -----------
-let g:airline_theme='bubblegum'
-
-" Statusline Separators
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-let g:airline_powerline_fonts = 1
-
 " Key Mappings
 " ------------
-
-" Quick Line Breaks
-noremap <CR> o
 
 " Quick Windows
 noremap <C-j> <C-W><C-j>
